@@ -528,6 +528,10 @@ strong {
   display: flex;
   align-items: center;
 }
+
+#mobile-warn {
+  display: none; visibility: hidden;
+}
 /*---------------------------------------
   ABOUT              
 -----------------------------------------*/
@@ -536,6 +540,7 @@ strong {
   background-size: cover;
   position: relative;
   height: 100vh;
+  height: 100%;
 }
 
 .about-image {
@@ -749,31 +754,6 @@ strong {
   .hero-section {
     padding-top: 150px;
   }
-
-  .pricing-thumb {
-    padding: 35px;
-  }
-
-  .schedule-table h3 {
-    font-size: 22px;
-  }
-
-  .schedule-table th {
-    padding: 20px;
-  }
-
-  .schedule-table tr, 
-  .schedule-table td {
-    padding: 25px;
-  }
-
-  .ticket-section {
-    padding-top: 130px;
-  }
-
-  .ticket-form {
-    padding: 30px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -804,6 +784,110 @@ strong {
     font-size: 20px;
   }
 }
+
+/* iPhone SE */
+@media only screen 
+    and (width: 375px) 
+    and (height: 667px) 
+    and (-webkit-device-pixel-ratio: 2) {
+    
+    html, body {overflow-x: hidden;}
+    #ascii-computer {display: none !important; visibility: hidden !important;}
+    #ascii-text {font-size: xx-small; text-align: left;}
+    #mobile-warn {display: block; visibility: visible;}
+    
+  }
+
+/* 11 Pro Max */
+@media only screen 
+    and (width: 414px) 
+    and (height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) {
+    
+    html, body {overflow-x: hidden;}
+    #ascii-computer {display: none !important; visibility: hidden !important;}
+    #mobile-warn {display: block; visibility: visible;}
+    
+  }
+
+/* XR and 11 */
+@media only screen 
+    and (width: 414px) 
+    and (height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) {
+    
+    html, body {overflow-x: hidden;} 
+    #ascii-computer {display: none !important; visibility: hidden !important;}
+    #mobile-warn {display: block; visibility: visible;}
+    
+  }
+
+/* X and others*/
+@media only screen 
+    and (width: 375px) 
+    and (height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+    
+    html, body {overflow-x: hidden;} 
+    #ascii-computer {display: none !important; visibility: hidden !important;}
+    .about-section {padding-top: 100%;}
+    #mobile-warn {display: block; visibility: visible;}
+    
+  }
+  
+
+/* 1284×2778 pixels at 458ppi */
+@media only screen 
+    and (width: 428px) 
+    and (height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) {
+    
+    html, body {overflow-x: hidden;} 
+    #ascii-computer {display: none !important; visibility: hidden !important;}
+    
+    #mobile-warn {display: block; visibility: visible;}
+    
+  }
+
+/* 1170×2532 pixels at 460ppi */
+@media only screen 
+    and (width: 390px) 
+    and (height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+      
+      html, body {overflow-x: hidden;} 
+      #ascii-computer {display: none !important; visibility: hidden !important;}
+      
+      #mobile-warn {display: block; visibility: visible;}
+      
+  }
+
+/* 1284×2778 pixels at 460ppi */
+@media only screen 
+    and (width: 430px) 
+    and (height: 932px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+      
+      html, body {overflow-x: hidden;}
+      #ascii-computer {display: none !important; visibility: hidden !important;}
+      
+      #mobile-warn {display: block;}
+      
+    }
+
+/* 15 Pro */
+@media only screen 
+    and (width: 393px) 
+    and (height: 852px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+      
+      html, body {overflow-x: hidden;}
+      #ascii-computer {display: none !important; visibility: hidden !important;}
+      
+      #mobile-warn {display: block;}
+      
+    }
+
 
 @keyframes slidein {
   from {

@@ -1,3 +1,3 @@
-# personal-site-v2
+# [personal-site](https://evanptaylor.github.io/personal-site/)
 
 personal site built using bootstrap, vanta.js, and jquery

@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="personal website">
+    <meta name="author" content="evan taylor">
+
+    <title>et</title>
+
+    <!-- CSS FILES -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/threejs/three.min.js"></script>
+    <script src="js/vantajs/vanta.fog.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">
+                    et
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">about</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">projects</a>
+                        </li>
+                    </ul>
+
+                    <a href="/other/Evan_Taylor_resume.pdf" download class="btn custom-btn d-lg-block d-none">resume</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HOME -->
+        <section class="hero-section" id="section_1">
+            <div class="section-overlay"></div>
+
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="row">
+
+                    <div class="col-12 mt-auto mb-5 text-center">
+                    
+                        <h1 class="mb-5" style="color: var(--white-color); opacity: 0.75;">evan taylor</h1>
+
+                        <a class="btn custom-btn smoothscroll" href="#section_4">get in touch</a>
+                    </div>
+
+                    <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center justify-content-around">
+                        <div class="date-wrap">
+                            <h5 class="text-white">
+                                <p id="date"></p>
+                                <script>
+                                setInterval(function() {
+                                    document.getElementById("date").innerHTML = Date();
+                                    }, 1000)
+                                </script>
+                            </h5>
+                        </div>
+
+            
+                        <div class="social-share">
+                            <ul class="social-icon d-flex align-items-center justify-content-center">
+                               
+
+                                <li class="social-icon-item">
+                                    <a target="_tab" rel="noopener noreferrer" href="https://github.com/evanptaylor" class="social-icon-link">
+                                        <span class="bi-github"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a target="_tab" rel="noopener noreferrer" href="https://www.linkedin.com/in/evanptaylor" class="social-icon-link">
+                                        <span class="bi-linkedin"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a target="_tab" rel="noopener noreferrer" href="mailto:eevantaylorr@gmail.com" class="social-icon-link">
+                                        <span class="bi bi-envelope"></span>
+                                    </a>
+                                </li>
+                                <li class="social-icon-item">
+                                    <a target="_tab" rel="noopener noreferrer" href="https://instagram.com/notevantaylor" class="social-icon-link">
+                                        <span class="bi-instagram"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-wrap">
+                <div class="custom-video">
+                        <!-- IF CHANGE TO VIDEO-->
+                </div>
+               
+            </div>
+            <!-- VANTA.JS BG ANIMATION-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+            <script>
+                VANTA.WAVES({
+                  el: ".custom-video",
+                  mouseControls: true,
+                  touchControls: true,
+                  gyroControls: false,
+                  minHeight: 200.00,
+                  minWidth: 200.00,
+                  scale: 1.00,
+                  scaleMobile: 1.00,
+                  color: 0x5110a,
+                  shininess: 10.00,
+                  waveHeight: 50.00,
+                  waveSpeed: 0.35,
+                  zoom: 0.3
+                })
+                </script>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about-section section-padding vertical-center" id="section_2">
+            <div class="container" id="about">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                        <div class="services-info">
+                            <h2 class="about-p mb-4">about</h2>
+
+                            <p class="about-p">i'm a junior computer science and mathematics major at boston college ('25)</p>
+
+                            <p class="about-p">i enjoy coding, problem-solving, and learning about emerging tech</p>
+
+                            <p class="about-p">some of my other hobbies include playing and watching basketball, and probability based card games like poker</p>
+                            <p class="about-p">many of my personal projects involve applications of quantitative methods to my hobbies</p>
+
+                            <p class="about-p">take a look at some of the ones i've pushed to github below</p>
+
+                            <p class="about-p">i am currently looking for an internship for summer 2024 in swe, data science, or similar quantitative roles</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                        <div class="services-info">
+                            <p class="about-p" style="font-size: x-small; white-space: pre;"> 
+                            </br>
+                            </br>
+                            </br>
+
+
+                                         .,,uod8B8bou,,.
+                                ..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:.
+                           ,=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||
+                           !...:!TVBBBRPFT||||||||||!!^^""'   ||||
+                           !.......:!?|||||!!^^""'            ||||
+                           !.........||||                     ||||
+                           !.........||||  ~%                 ||||
+                           !.........||||                     ||||
+                           !.........||||                     ||||
+                           !.........||||                     ||||
+                           !.........||||                     ||||
+                           `.........||||                    ,||||
+                            .;.......||||               _.-!!|||||
+                     .,uodWBBBBb.....||||       _.-!!|||||||||!:'
+                  !YBBBBBBBBBBBBBBb..!|||:..-!!|||||||!iof68BBBBBb....
+                  !..YBBBBBBBBBBBBBBb!!||||||||!iof68BBBBBBRPFT?!::   `.
+                  !....YBBBBBBBBBBBBBBBBBBBBBBBBBBBBRPFT?!:::::::::     `.
+                  !......YBBBBBBBBBBBBBBBBBBBRPFT?!::::::::::::::::       `.
+                  !........YBBBBBBBBBBRPFT?!::::::::::::::::::::::;         iBBbo.
+                  `..........YBRPFT?!::::::::::::::::::::::::;iof68bo.      WBBBBbo.
+                    `..........:::::::::::::::::::::::;iof688888888888b.     `YBBBP^'
+                      `........::::::::::::::::;iof688888888888888888888b.     `
+                        `......:::::::::;iof688888888888888888888888888888b.
+                          `....:::;iof688888888888888888888888888888888899fT!
+                            `..::!8888888888888888888888888888888899fT|!^"'
+                              `' !!988888888888888888888888899fT|!^"'
+                                  `!!8888888888888888899fT|!^"'
+                                    `!988888888899fT|!^"'
+                                      `!9899fT|!^"'
+                                        `!^"'
+                                
+                                </p>
+                            
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects-section section-padding" id="section_3">
+            <div class="container">
+                <h2 class="mb-5 text-center" style="color: var(--white-color); opacity: 0.75;" styl>projects</h2>
+                <div class="row p-1 justify-content-center">
+
+                    <a href="#section_1"><div class="project-repo col-sm-4 mx-2 mb-2">
+                        <p class="repo-text name"><i class="bi bi-link-45deg"></i>portfolio-site-v2</p>
+                        <p class="repo-text desc">the code for this site; built using bootstrap, jquery, and vanta.js</p>
+                        <p class="repo-text lang">>\ html, css, javascript</p></a>
+                    </div>
+
+                    <div class="project-repo col-sm-4 mx-2 mb-2">
+                        <a target="_tab" rel="noopener noreferrer" href="https://github.com/evanptaylor/neural-net">
+                        <p class="repo-text name"><i class="bi bi-link-45deg"></i>neural-net</p>
+                        <p class="repo-text desc">implementation of a two-layer neural network using only numpy</p>
+                        <p class="repo-text lang">>\ python</p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="row p-1 justify-content-center">
+
+                    <div class="project-repo col-sm-4 mx-2 mb-2">
+                        <a target="_tab" rel="noopener noreferrer" href="https://github.com/evanptaylor/nba-predictive-model">
+                        <p class="repo-text name"><i class="bi bi-link-45deg"></i>nba-predictive-model</p>
+                        <p class="repo-text desc">combines logit, random forest, and xgboost models to predict the outcome of nba games</p>
+                        <p class="repo-text lang">>\ python</p>
+                        </a>
+                    </div>
+
+                    <div class="project-repo col-sm-4 mx-2 mb-2">
+                        <a target="_tab" rel="noopener noreferrer" href="https://github.com/evanptaylor/backtesting-engine">
+                        <p class="repo-text name"><i class="bi bi-link-45deg"></i>backtesting-engine</p>
+                        <p class="repo-text desc">framework for backtesting and visualizing trading strategies on any asset </p>
+                        <p class="repo-text lang">>\ python</p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="row p-1 justify-content-center">
+
+                    <div class="project-repo col-sm-4 mx-2 mb-2">
+                        <a target="_tab" rel="noopener noreferrer" href="https://github.com/evanptaylor/positive-ev-props">
+                        <p class="repo-text name"><i class="bi bi-link-45deg"></i>positive-ev-props</p>
+                        <p class="repo-text desc">script that locates pricing discrepancies in nba and nfl player prop market</p>
+                        <p class="repo-text lang">>\ python</p>
+                        </a>
+                    </div>
+
+                    <div class="project-repo col-sm-4 mx-2 mb-2">
+                        <a target="_tab" rel="noopener noreferrer" href="https://github.com/evanptaylor/gpt-plus">
+                        <p class="repo-text name"><i class="bi bi-link-45deg"></i>gpt-plus</p>
+                        <p class="repo-text desc">fine-tuned gpt model for personal use using openai's api</p>
+                        <p class="repo-text lang">>\ python</p>
+                    </a>
+                    </div>
+
+                </div>
+                <p class="text-center mt-5" style="color: var(--white-color); opacity: 0.75;">view more of my stuff on <a target="_tab" rel="noopener noreferrer" href="https://github.com/evanptaylor">github</a></p>
+            </div>
+        </section>
+
+
+
+        <section class="contact-section section-padding" id="section_4">
+            <div class="container">
+                <div class="col-12 mt-auto mb-5 text-center">
+                    
+                    <h6 class="mb-5" style="color: var(--white-color); opacity: 0.75;">
+                        contact me at <a target="_tab" rel="noopener noreferrer" href="mailto:eevantaylorr@gmail.com">eevantaylorr@gmail.com</a> or use the icons below </br>
+                        view my resume on the top right
+                    
+                    </h6>
+
+                </div>
+                   
+              
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="site-footer-top">
+            <div class="container">
+                        <ul class="social-icon d-flex justify-content-around">
+                            <li class="social-icon-item">
+                                <a target="_tab" rel="noopener noreferrer" href="https://github.com/evanptaylor" class="social-icon-link">
+                                    <span class="bi-github"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a target="_tab" rel="noopener noreferrer" href="https://www.linkedin.com/in/evanptaylor" class="social-icon-link">
+                                    <span class="bi-linkedin"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a target="_tab" rel="noopener noreferrer" href="mailto:eevantaylorr@gmail.com" class="social-icon-link">
+                                    <span class="bi bi-envelope"></span>
+                                </a>
+                            </li>
+                            <li class="social-icon-item">
+                                <a target="_tab" rel="noopener noreferrer" href="https://instagram.com/notevantaylor" class="social-icon-link">
+                                    <span class="bi-instagram"></span>
+                                </a>
+                            </li>
+
+                        </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
